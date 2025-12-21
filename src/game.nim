@@ -141,11 +141,10 @@ proc drawGameOver() =
 #endregion
 
 #region Sounds 
-
-var flapSound = newSound("src/resources/sounds/flap.mp3",SoundType.Static)
-var scoreSound = newSound("src/resources/sounds/score.mp3",SoundType.Static)
-var hitSound = newSound("src/resources/sounds/hit.mp3",SoundType.Static)
-var dieSound = newSound("src/resources/sounds/die.mp3",SoundType.Static)
+var flapSound: Sound
+var scoreSound: Sound
+var hitSound: Sound
+var dieSound: Sound
 #endregion
 
 #region Game
@@ -189,6 +188,10 @@ proc restartGame() =
 
 proc load() =
   # Resource loading
+  flapSound = newSound("src/resources/sounds/flap.mp3",SoundType.Static)
+  scoreSound = newSound("src/resources/sounds/score.mp3",SoundType.Static)
+  hitSound = newSound("src/resources/sounds/hit.mp3",SoundType.Static)
+  dieSound = newSound("src/resources/sounds/die.mp3",SoundType.Static)
   
   logoTexture = newTexture("src/resources/game_logo.png")
   startInfoTexture= newTexture("src/resources/start_info.png")
