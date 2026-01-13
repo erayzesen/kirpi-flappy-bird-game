@@ -1,4 +1,4 @@
-An educational **Snake game** written using the [kirpi framework](https://github.com/erayzesen/kirpi).
+An educational **Flappy Bird game** written using the [kirpi framework](https://github.com/erayzesen/kirpi).
 
 ![alt text](media/gameplay.gif)
 
